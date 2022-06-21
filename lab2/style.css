@@ -1,0 +1,14 @@
+body{
+    font-family:  "Times New Roman", serif;
+    background-color: #78b2fd;
+}
+b{
+    color: blanchedalmond;
+
+}
+.decimalOl{
+    list-style-type: decimal;
+}
+ol > li > a{
+    color: red;
+}
