@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -12,6 +13,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
+
 <body>
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
         <div class="container-fluid">
@@ -22,16 +24,17 @@
             </button>
             <div class="collapse navbar-collapse" id="mynavbar">
                 <ul class="navbar-nav me-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)">Link</a>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        More Action
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Action 2</a></li>
+                        <li><a class="dropdown-item" href="#">Action 3</a></li>
+                      </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)">Link</a>
-                    </li>
-                </ul>
+                  </ul>
                 <form class="d-flex">
                     <input class="form-control me-2" type="text" placeholder="Search">
                     <button class="btn btn-warning" type="button">Logout</button>
@@ -39,122 +42,146 @@
             </div>
         </div>
     </nav>
-    <div class="container">
-        <u>Register now while seats are available!</u>
-        <div class="row">
-            <div class="col-sm-6 col-xs-12">
-                <div class="row top-buffer">
-                    <div class="col-sm-6 col-xs-12">First Name</div>
-                    <div class="col-sm-6 col-xs-12">
-                        <input type="text" class="form-control" name="fname" placeholder="First Name" required></div>
-                </div>
-                <div class="row top-buffer">
-                    <div class="col-sm-6 col-xs-12">Last Name</div>
-                    <div class="col-sm-6 col-xs-12"><input type="text" class="form-control" name="lname" placeholder="Last Name" required></div>
-                </div>
-                <div class="row top-buffer">
-                    <div class="col-sm-6 col-xs-12">Company/Institution</div>
-                    <div class="col-sm-6 col-xs-12">
-                        <input type="text" class="form-control" name="lname" placeholder="Company/Institution" required>
+    <form action="index.html" method="post">
+
+        <div class="container">
+            <u>Register now while seats are available!</u>
+            <div class="row">
+                <div class="col-sm-6 col-xs-12">
+                    <div class="row top-buffer">
+                        <div class="col-sm-6 col-xs-12">First Name</div>
+                        <div class="col-sm-6 col-xs-12">
+                            <input type="text" class="form-control" name="fname" placeholder="First Name" required>
+                        </div>
                     </div>
-                </div>
-                <div class="row top-buffer">
-                    <div class="col-sm-6 col-xs-12">Address</div>
-                    <div class="col-sm-6 col-xs-12">
-                        <textarea name="address" class="form-control" placeholder="Address"></textarea>
+                    <div class="row top-buffer">
+                        <div class="col-sm-6 col-xs-12">Last Name</div>
+                        <div class="col-sm-6 col-xs-12"><input type="text" class="form-control" name="lname"
+                                placeholder="Last Name" required></div>
                     </div>
-                </div>
-                <div class="row top-buffer">
-                    <div class="col-sm-6 col-xs-12">City</div>
-                    <div class="col-sm-6 col-xs-12">
-                        <input type="text" class="form-control" name="city" placeholder="City">
+                    <div class="row top-buffer">
+                        <div class="col-sm-6 col-xs-12">Company/Institution</div>
+                        <div class="col-sm-6 col-xs-12">
+                            <input type="text" class="form-control" name="lname" placeholder="Company/Institution"
+                                required>
+                        </div>
                     </div>
-                </div>
-                <div class="row top-buffer">
-                    <div class="col-sm-6 col-xs-12">State / Provice / Region</div>
-                    <div class="col-sm-6 col-xs-12">
-                        <select class="form-control" name="state">
-                            <option value="">Choose One</option>
-                            <option value="iowa">IOWA</option>
-                            <option value="new york">NEW YORK</option>
-                            <option value="Illinois">ILLINOIS</option>
-                        </select>
+                    <div class="row top-buffer">
+                        <div class="col-sm-6 col-xs-12">Address</div>
+                        <div class="col-sm-6 col-xs-12">
+                            <textarea name="address" class="form-control" placeholder="Address"></textarea>
+                        </div>
                     </div>
-                </div>
-                <div class="row top-buffer">
-                    <div class="col-sm-6 col-xs-12">Country</div>
-                    <div class="col-sm-6 col-xs-12">
-                        <select class="form-control" name="state">
-                            <option value="">Choose One</option>
-                            <option value="bangladesh">BANGLADESH</option>
-                            <option value="usa">USA</option>
-                            <option value="uk">UK</option>
-                        </select>
+                    <div class="row top-buffer">
+                        <div class="col-sm-6 col-xs-12">City</div>
+                        <div class="col-sm-6 col-xs-12">
+                            <input type="text" class="form-control" name="city" placeholder="City">
+                        </div>
                     </div>
-                </div>
-                <div class="row top-buffer">
-                    <div class="col-sm-6 col-xs-12">Email</div>
-                    <div class="col-sm-6 col-xs-12">
-                        <input type="text" class="form-control" name="email" placeholder="Email">
+                    <div class="row top-buffer">
+                        <div class="col-sm-6 col-xs-12">State / Provice / Region</div>
+                        <div class="col-sm-6 col-xs-12">
+                            <select class="form-control" name="state">
+                                <option value="">Choose One</option>
+                                <option value="iowa">IOWA</option>
+                                <option value="new york">NEW YORK</option>
+                                <option value="Illinois">ILLINOIS</option>
+                            </select>
+                        </div>
                     </div>
-                </div>
-                <div class="row top-buffer">
-                    <div class="col-sm-6 col-xs-12">Phone Number</div>
-                    <div class="col-sm-6 col-xs-12">
-                        <input type="text" class="form-control" name="phone" placeholder="Phone Number">
+                    <div class="row top-buffer">
+                        <div class="col-sm-6 col-xs-12">Country</div>
+                        <div class="col-sm-6 col-xs-12">
+                            <select class="form-control" name="state">
+                                <option value="">Choose One</option>
+                                <option value="bangladesh">BANGLADESH</option>
+                                <option value="usa">USA</option>
+                                <option value="uk">UK</option>
+                            </select>
+                        </div>
                     </div>
-                </div>
+                    <div class="row top-buffer">
+                        <div class="col-sm-6 col-xs-12">Email</div>
+                        <div class="col-sm-6 col-xs-12">
+                            <input type="text" class="form-control" name="email" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="row top-buffer">
+                        <div class="col-sm-6 col-xs-12">Phone Number</div>
+                        <div class="col-sm-6 col-xs-12">
+                            <input type="text" class="form-control" name="phone" placeholder="Phone Number">
+                        </div>
+                    </div>
 
 
-            </div>
-            <div class="col-sm-6 col-xs-12">
-                <u>Lunch</u>
-                <div class="row top-buffer">
-                    <div class="col-sm-6 col-xs-12">Meal Preference</div>
-                    <div class="col-sm-6 col-xs-12">
-                        <select class="form-control" name="mealPreference">
-                            <option>Select One</option>
-                            <option value="veg">Vegeterian</option>
-                            <option value="nveg">Non-Vegeterian</option>
-                        </select>
-                    </div>
                 </div>
-                <u>Payment Details</u>
-                <div class="row top-buffer">
-                    <div class="col-sm-6 col-xs-12">Payment Mode</div>
-                    <div class="col-sm-6 col-xs-12">
-                        <label>
-                            <input type="checkbox" name="cash"> Cash
-                        </label><br/>
-                        <label>
-                            <input type="checkbox" name="cheque"> Cheque
-                        </label><br/>
-                        <label>
-                            <input type="checkbox" name="dd"> Demand Draft
-                        </label>
+                <div class="col-sm-6 col-xs-12">
+                    <u>Lunch</u>
+                    <div class="row top-buffer">
+                        <div class="col-sm-6 col-xs-12">Meal Preference</div>
+                        <div class="col-sm-6 col-xs-12">
+                            <select class="form-control" name="mealPreference">
+                                <option>Select One</option>
+                                <option value="veg">Vegeterian</option>
+                                <option value="nveg">Non-Vegeterian</option>
+                            </select>
+                        </div>
                     </div>
-                </div>
-                <div class="row top-buffer">
-                    <div class="col-sm-6 col-xs-12">DD/Cheque No</div>
-                    <div class="col-sm-6 col-xs-12">
-                        <input type="text" class="form-control" name="chequeNo" placeholder="DD/Cheque No">
+                    <u>Payment Details</u>
+                    <div class="row top-buffer">
+                        <div class="col-sm-6 col-xs-12">Payment Mode</div>
+                        <div class="col-sm-6 col-xs-12">
+                            <label>
+                                <input type="checkbox" name="cash"> Cash
+                            </label><br />
+                            <label>
+                                <input type="checkbox" name="cheque"> Cheque
+                            </label><br />
+                            <label>
+                                <input type="checkbox" name="dd"> Demand Draft
+                            </label>
+                        </div>
                     </div>
-                </div>
-                <div class="row top-buffer">
-                    <div class="col-sm-6 col-xs-12">Drawn On (Bank Name)</div>
-                    <div class="col-sm-6 col-xs-12">
-                        <input type="text" class="form-control" name="bankName" placeholder="Drawn On (Bank Name)">
+                    <div class="row top-buffer">
+                        <div class="col-sm-6 col-xs-12">DD/Cheque No</div>
+                        <div class="col-sm-6 col-xs-12">
+                            <input type="text" class="form-control" name="chequeNo" placeholder="DD/Cheque No">
+                        </div>
                     </div>
-                </div>
-                <div class="row top-buffer">
-                    <div class="col-sm-6 col-xs-12">Payable at</div>
-                    <div class="col-sm-6 col-xs-12">
-                        <input type="text" class="form-control" name="payableat" placeholder="Payable at">
+                    <div class="row top-buffer">
+                        <div class="col-sm-6 col-xs-12">Drawn On (Bank Name)</div>
+                        <div class="col-sm-6 col-xs-12">
+                            <input type="text" class="form-control" name="bankName" placeholder="Drawn On (Bank Name)">
+                        </div>
+                    </div>
+                    <div class="row top-buffer">
+                        <div class="col-sm-6 col-xs-12">Payable at</div>
+                        <div class="col-sm-6 col-xs-12">
+                            <input type="text" class="form-control" name="payableat" placeholder="Payable at">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+        <div class="container-fluid">
+            <nav class="navbar fixed-bottom navbar-light bg-light">
+            <div class="col text-end">
+                <input type="submit" class="btn btn-success">
+                <input type="reset" class="btn btn-warning">
 
-    </body>
+
+            </div>
+            <div class="col text-end">
+                <a href="#">
+                    <img src="assets/images/valid-html20.gif" alt="html validator"/></a> &nbsp;
+                <a href="#">
+                        <img src="assets/images/css_checker.png" alt="CSS validator"/></a>
+            </div>
+            
+            </nav>
+            
+        </div>
+    </form>
+</body>
+
 </html>
