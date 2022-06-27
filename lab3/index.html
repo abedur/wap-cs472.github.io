@@ -19,6 +19,12 @@
             color: white;
             text-align: center !important;
         }
+        #middle{
+            /*border: 1px solid white;*/
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
     </style>
 </head>
 
@@ -30,11 +36,15 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar"><span
                     class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="mynavbar">
-                <ul class="navbar-nav me-auto">
+                <div class="me-auto" id="middle">
+                <ul class="navbar-nav">
                     <li class="nav-item">
                         <h4>Welcome, Abedur</h4>
                     </li>
                 </ul>
+                    
+                </div>
+                
                 <form class="d-flex">
                     <button class="btn btn-warning" type="button">Logout</button>
                 </form>
