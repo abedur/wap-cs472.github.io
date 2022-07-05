@@ -42,6 +42,7 @@ student2.addAnswer(new Question(2, 'a'));
 student2.addAnswer(new Question(1, 'd'));
 const students = [student1, student2];
 const quiz = new Quiz(questions, students);
+
 let scoreforStudent10 = quiz.scoreStudentBySid(10);
 console.log(scoreforStudent10);
 let scoreforStudent11 = quiz.scoreStudentBySid(11);
