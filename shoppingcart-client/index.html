@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <form id="bookForm">
+        <input type="hidden" name="bookId" id="bookId" />
+        <label for="title">Title:</label><br>
+        <input type="text" id="title" name="title" ><br>
+        <label for="isbn">isbn:</label><br>
+        <input type="text" id="isbn" name="isbn"><br>
+        <label for="date">date:</label><br>
+        <input type="text" id="date" name="date"><br>
+        <label for="author">author:</label><br>
+        <input type="text" id="author" name="author"><br><br>
+        
+        <button id="submitBtn">Submit</button>&nbsp;<button id="updateBtn" style="display:none;">Update</button>
+        
+
+      </form> 
+
+    <table id="bookTbl">
+        <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>isbn</th>
+            <th>Author</th>
+            <th>Action</th>
+        </tr>
+    </table>
+</body>
+
+</html>
